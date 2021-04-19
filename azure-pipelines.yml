@@ -43,7 +43,7 @@ steps:
     publishWebProjects: false
     arguments: --no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)
     zipAfterPublish: true
-- task: WhiteSource Bolt@2
+- task: WhiteSource Bolt@19
   displayName: Run WhiteSource Bolt
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
